@@ -1,0 +1,16 @@
+<div class="search-list-container">
+  <mat-form-field class="search-input">
+    <mat-label>Search City or Country</mat-label>
+    <input matInput (keyup)="applyFilter($event)" />
+  </mat-form-field>
+  <div class="search-list">
+    <mat-selection-list #cityList [multiple]="false" (selectionChange)="selectedOption(cityList.selectedOptions.selected)">
+      <mat-list-option
+        *ngFor="let city of cities | filter: searchTerm"
+        [value]="city"
+      >
+        {{ city?.Rank }}. {{ city?.City }}
+      </mat-list-option>
+    </mat-selection-list>
+  </div>
+</div>

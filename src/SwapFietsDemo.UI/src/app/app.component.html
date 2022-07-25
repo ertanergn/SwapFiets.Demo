@@ -1,0 +1,19 @@
+<mat-toolbar color="primary">
+  <button
+    mat-icon-button
+    (click)="sidenav.toggle()"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Bike indexes for cities</span>
+
+  <button mat-raised-button color="Accent" (click)="openDialog()" style="margin-left: 20px;">Set Proximity</button>
+</mat-toolbar>
+<mat-drawer-container class="sidenav-container" autosize>
+  <mat-drawer #sidenav mode="side" opened class="sidenav">
+    <app-search-list [cities]="cities"></app-search-list>
+  </mat-drawer>
+  <mat-drawer-content>
+    <app-map [cities]="cities"></app-map>
+  </mat-drawer-content>
+</mat-drawer-container>

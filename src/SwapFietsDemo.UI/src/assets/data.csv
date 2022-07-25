@@ -1,0 +1,9 @@
+City,Latitude,Longitude,Country,Proximity,Stolen,StolenWithinProximity,NotStolen
+1,Amsterdam,52.37403,4.88969,Netherlands,34,11,19,65
+2,Berlin,52.52437,13.41053,Germany,163,17,14,60
+3,Copenhagen,55.67594,12.56553,Denmark,202,30,58,32
+4,Brussels,50.85045,4.34878,Belgium,202,30,58,32
+5,Milan,45.46427,9.18951,Italy,33,14,29,148
+6,London,51.50853,-0.12574,United Kingdom ,20,2,2,18
+7,Paris,48.85341,2.3488,France,11,3,4,36
+end
