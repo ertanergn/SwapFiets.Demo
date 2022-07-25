@@ -10,6 +10,10 @@ The repository consist of three main project;
 In order the run the projects, you need both net core 6 and angular are being installed in your environment. You can follow the link below for setup;
 1. Please visit [official website](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) to download net core 6 sdk and follow [instructions](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-run) to run net core project.
 2. Please follow the guides to install andgular on [Windows](https://ccbill.com/kb/install-angular-on-windows) or [mac](https://www.knowledgehut.com/blog/web-development/install-angular-on-macos)
+3. Please request Google Maps Api Access Key or use your own key. I included the key in the mail and it should be replaced in two places
+    - SwapFiets.Demo\src\SwapFietsDemo.UI\src\environments\environment.ts
+    - SwapFiets.Demo\src\SwapFietsDemo.UI\src\environments\environment.prod.ts
+    ![Dotnet run command](Screenshot-5.png)
 
 ## Run applications
 If you have an IDE to run .Net core applications, you can start the application in DEBUG mode or use `` dotnet run `` command to run the web api application.
